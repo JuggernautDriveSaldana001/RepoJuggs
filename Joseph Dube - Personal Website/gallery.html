@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Dube profile | Homepage  </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  </head>
+<body>
+<!--This code is for the loge and other controls on the Homepage-->
+<!--Nav Bar-->
+<div class="header">
+    <div class="container">
+      <div class="navbar">
+          <div class="logo">
+             <a href="index.html"><img src="images/logo-small.png" width="125px"></a>
+          </div>   
+                <nav>
+                  <ul id="MenuItems">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="About.html">About</a></li>
+                      <li><a href="gallery.html">Gallery</a></li>
+                      <li><a href="Contact.html">Contact</a></li>
+                  </ul>
+               </nav>
+               <a href="index.html"><img src="images/icon.png" width="30px" height="30px"><span id="cart-item" class="badge badge-danger"></span></a>
+               <img src="images/menu.png" class="menu-icon" 
+               onclick="menutoggle()">
+         </div>  
+    </div>
+</div>
+<!-------- gallery ----------->
+
+<div class="gallery-section">
+  <div class="inner-width">
+    <h1>My Gallery</h1>
+    <div class="border"></div>
+    <div class="gallery">
+
+      <a href="images/'Working with Computers and Devices” by Garrick Chow!.jpg" class="image">
+        <img src="images/Working with Computers and Devices by Garrick Chow.jpg" alt="">
+      </a>
+
+      <a href="images/Working with computer.png" class="image">
+        <img src="images/Working with computer.png" alt="">
+      </a>
+
+      <a href="images/Microsoft Collaboration.jpg" class="image">
+        <img src="images/Microsoft Collaboration.jpg" alt="">
+      </a>
+
+      <a href="images/Microsoft Collaboration SharePoint Teams Groups and Yammer by Gini von Courter.jpg" class="image">
+        <img src="images/Microsoft Collaboration SharePoint Teams Groups and Yammer by Gini von Courter.jpg" alt="">
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<!-------- gallery js ----------->
+<script>
+$(".gallery").magnificPopup({
+  delegate: 'a',
+  type: 'image',
+  gallery:{
+    enabled: true
+  }
+});
+</script>
+
+<!-------- gallery end ----------->
+
+
+<!-------- footer ----------->
+<div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+           <h3>Joseph Dube</h3> 
+           <p>Jr Cloud App | Digital administration | System Dev</p>
+           <div class="app-logo">
+             <img src="images/CiTi_Logo-removebg-preview.png">
+             <img src="images/salesforce-small.png">
+           </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="images/logo-small.png">
+          <p>Conect with me via LinkedIn</p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Useful links </h3> 
+          <ul>
+          <li>LinkedIn</li>
+          <li>TrailBlazer</li>
+        </ul>
+      </div>
+  
+      <div class="footer-col-3">
+        <h3>Social links </h3> 
+        <ul>
+          <li>LinkedIn</li>
+          <li>Salesforce</li>
+        </ul>
+    </div>
+    </div>
+  <hr>
+  <p class="copyright">copyright 2022 - Joseph Dube</p>
+    </div>
+  </div>
+
+<!---------scroll bar------>
+<style>
+  html {
+    scrollbar-width: 1vw;
+    scrollbar-color: #ffff ;
+  }
+
+  html::-webkit-scrollbar {
+    width: 1vw;
+  }
+
+  html::-webkit-scrollbar-thumb {
+    background-color: yellow;
+  }
+
+  html::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+  }
+
+  html::-webkit-scrollbar-track {
+    background-color: rgb(255, 251, 251);
+  }
+
+</style>
+  
+  <!---------js for toggle menu & Gallery------>
+  <script>
+    var MenuItems = document.getElementById("MenuItems") 
+  
+    MenuItems.style.maxHeight="0px";
+    function menutoggle(){
+      if (MenuItems.style.maxHeight == "0px")
+      {
+         MenuItems.style.maxHeight = "200px";
+      }
+      else 
+      {
+          MenuItems.style.maxHeight = "0px";
+      }
+  
+    }
+
+  
+  </script>
+
+  </body>
+  </html>
